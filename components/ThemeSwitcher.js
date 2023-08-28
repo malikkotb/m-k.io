@@ -12,6 +12,8 @@ export default function ThemeSwitcher() {
     setMounted(true);
   });
 
+  
+
   if (!mounted) {
     return null;
   }

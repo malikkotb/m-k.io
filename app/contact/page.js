@@ -8,7 +8,6 @@ import { HiCode } from "react-icons/hi";
 import { GiBasketballBasket } from "react-icons/gi";
 import { FaDiscord } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export default function Contact() {
   const animationVariant = {
@@ -16,7 +15,7 @@ export default function Contact() {
     visible: { opacity: 1, y: 0 },
   };
 
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className="flex flex-col gap-16 md:gap-24">
@@ -68,7 +67,7 @@ export default function Contact() {
           <a
             className="flex justify-between gap-2 items-center no-underline cursor-pointer
             rounded-lg p-4 transition-opacity dark:transition-opacity
-            bg-black bg-opacity-10 hover:bg-opacity-20 
+            bg-black bg-opacity-10 hover:bg-opacity-20
             dark:bg-[#F8F9FA] dark:bg-opacity-20 dark:hover:bg-opacity-10"
             href="mailto:malikkotb@icloud.com"
           >
@@ -168,30 +167,12 @@ export default function Contact() {
           </a>
         </motion.li>
       </ul>
-      <ul
+      {/* potential group hover idea */}
+      {/* <ul
         className={`flex-grow grid grid-cols-1 gap-2 lg:gap-3 group duration-300`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* <motion.li
-          variants={animationVariant}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.2, duration: 0.35 }}
-          className="col-span-1 hover:opacity-100 opacity-60 transition-opacity duration-300"
-        >
-          <a
-            className="flex justify-between gap-2 items-center no-underline cursor-pointer
-            rounded-lg p-4"
-            href="mailto:malikkotb@icloud.com"
-          >
-            <div className="flex gap-2 text-center items-center">
-              <IoIosMail className="text-2xl" />
-              Email
-            </div>
-            <HiMiniArrowUpRight className="text-xl" />
-          </a>
-        </motion.li> */}
         <li className="hover:opacity-100 opacity-100 transition-opacity duration-300">
           Item 1
         </li>
@@ -201,7 +182,7 @@ export default function Contact() {
         <li className="hover:opacity-100 opacity-60 transition-opacity duration-300">
           Item 3
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
