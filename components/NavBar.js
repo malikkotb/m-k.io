@@ -12,13 +12,12 @@ import { useState, useEffect } from "react";
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [darkMode, setDarkMode ] = useState(false);
 
   // when the component is mounted on the client side, this useEffect hook will be called and mounted will be set to True
   // and then the belox jsx will be rendered
   useEffect(() => {
     setMounted(true);
-  });
+  }, []);
 
   if (!mounted) {
     return null;
@@ -69,7 +68,8 @@ export default function NavBar() {
         <div className="flex items-center">
           <MenuDropdown />
           <div className="flex flex-col">
-            {(theme==='light') && <button onClick={() => setTheme("dark")}> <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
+          <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
+            {(theme==='light') && <button onClick={() => setTheme("dark")}><BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
 </button>}
             {(theme==='dark') && <button onClick={() => setTheme("light")}><BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
           </div>
