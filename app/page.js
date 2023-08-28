@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Project from "../components/project";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const projects = [
@@ -32,23 +33,30 @@ export default function Home() {
     },
   ];
 
+  const animationVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    transition: {duration: 0.5}
+  };
+
   return (
     <div className="flex flex-col gap-16 md:gap-24">
       <div className="flex flex-col gap-8">
         <div>
-          <h1 className="text-3xl font-bold">Malik Kotb</h1>
-          <p className="text-gray-600">I do cool things with code.</p>
+          <motion.h1 variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.05, duration: 0.35 }} 
+          className="text-3xl font-bold">Malik Kotb</motion.h1>
+          <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.1, duration: 0.35 }} className="text-gray-600">I do cool things with code.</motion.p>
         </div>
         <div className="flex flex-col md:flex-row gap-6 md:items-center">
-          <img src="profile.png" className="w-40 rounded-full"></img>
+          <motion.img variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.15, duration: 0.35 }} src="profile.png" className="w-40 rounded-full"></motion.img>
         </div>
-        <p className="text-primary max-w-lg text-gray-600">
+        <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="text-primary max-w-lg text-gray-600">
           Hi, I'm Malik Kotb, a software engineer who loves building cool things
           with code. I am currently focusing on creative web development, but my
           interest lie in all things development. I studied Computer Science
           Games Engineering at TUM.
-        </p>
-        <ul className="flex flex-col md:flex-row gap-2 md:gap-6">
+        </motion.p>
+        <motion.ul variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.25, duration: 0.35 }} className="flex flex-col md:flex-row gap-2 md:gap-6">
           <li>
             <a
               className="transition-transform transform hover:translate-y-[-1px] hover:translate-x-[1px]
@@ -70,13 +78,15 @@ export default function Home() {
               Connect with me
             </Link>
           </li>
-        </ul>
+        </motion.ul>
       </div>
       <div className="flex flex-col">
-        <p className="pb-4">Projects</p>
-        {projects.map((project) => {
-          return <Project project={project} />;
+        <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.3, duration: 0.35 }} className="pb-4">Projects</motion.p>
+        <motion.div variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.35, duration: 0.35 }}>
+        {projects.map((project, index) => {
+          return <Project key={index} project={project} />;
         })}
+        </motion.div>
       </div>
     </div>
   );

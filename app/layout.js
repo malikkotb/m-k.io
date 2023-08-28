@@ -2,7 +2,6 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Roboto } from "next/font/google";
-import { motion } from "framer-motion";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
