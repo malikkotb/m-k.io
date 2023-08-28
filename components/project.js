@@ -32,7 +32,7 @@ export default function Project({ project }) {
         animate={isActive ? "open" : "closed"}
         className={styles.imgContainer}
       >
-        <img src={`${src}`}></img>
+        <img alt="" src={`${src}`}></img>
       </motion.div>
       <p>{title2}</p>
     </div>
