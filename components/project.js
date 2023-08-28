@@ -1,5 +1,5 @@
 "use client";
-import styles from "./style.module.css";
+import styles from "./Style.module.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
