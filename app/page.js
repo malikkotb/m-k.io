@@ -9,34 +9,33 @@ export default function Home() {
     {
       title1: "Sticky",
       title2: "Notes",
-      src: "sticky_notes.png",
+      src: "./sticky_notes.png",
     },
     {
       title1: "Pastry",
       title2: "Shop",
-      src: "pastry_shop.png",
+      src: "./pastry_shop.png",
     },
     {
       title1: "Foodpal",
       title2: "Huit",
-      src: "foodpal.png",
+      src: "./foodpal.png",
     },
     {
       title1: "Vue.js",
       title2: "Chat App",
-      src: "vue_chat.png",
+      src: "./vue_chat.png",
     },
     {
       title1: "PyTorch",
       title2: "CNN",
-      src: "image_cnn.png",
+      src: "./image_cnn.png",
     },
   ];
 
   const animationVariant = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
-    transition: {duration: 0.5}
   };
 
   return (
