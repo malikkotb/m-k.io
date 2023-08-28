@@ -27,7 +27,7 @@ export default function MenuDropdown() {
           leaveTo="transform opacity-0 scale-95"
         >
           <Menu.Items className="absolute right-0 mt-2 w-40 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg focus:outline-none">
-            <div className="px-1 py-1 ">
+            <div className="px-1 py-1">
               <Menu.Item>
                 {({ active }) => (
                   <Link href={"/about"}>

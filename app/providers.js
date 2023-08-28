@@ -7,7 +7,7 @@ export default function Providers({ children }) {
 
   useEffect(() => {
     setMounted(true);
-  });
+  }, []);
 
   if (!mounted) {
     return <>{ children }</>;

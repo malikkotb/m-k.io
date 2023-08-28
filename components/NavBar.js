@@ -67,11 +67,11 @@ export default function NavBar() {
         </ul>
         <div className="flex items-center">
           <MenuDropdown />
-          <div className="flex flex-col">
-          <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
-            {(theme==='light') && <button onClick={() => setTheme("dark")}><BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
-</button>}
-            {(theme==='dark') && <button onClick={() => setTheme("light")}><BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
+          <div className="flex">  {/* flex-col */}
+            {/* (theme==='light') &&  */}
+            {/* (theme==='dark') && */}
+            {<button onClick={() => setTheme("dark")}><BsSun className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
+            { <button><BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
           </div>
         </div>
       </nav>
