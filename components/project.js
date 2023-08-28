@@ -24,7 +24,7 @@ export default function Project({ project }) {
       onMouseLeave={() => {
         setIsActive(false);
       }}
-      className={styles.project}
+      className={`${styles.project} last-of-type:border-b-2 dark:last-of-type:border-b-white last-of-type:border-b-black border-t-2 border-t-black dark:border-t-white`}
     >
       <p>{title1}</p>
       <motion.div
