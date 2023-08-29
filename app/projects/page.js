@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function page() {
   const animationVariant = {
@@ -29,7 +30,7 @@ export default function page() {
             transition={{ delay: 0.15, duration: 0.35 }}
             className="max-w-sm text-gray-500"
           >
-            Here are some of the projects I{"'"}ve worked on.
+            Here are some of the projects I&apos;ve worked on.
           </motion.p>
         </div>
       </div>
@@ -46,7 +47,7 @@ export default function page() {
             href={"/projects/pastryshop"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./pastry_shop.png" alt="pastry shop" />
+              <Image src="./pastry_shop.png" alt="pastry shop" />
             </div>
           </Link>
 
@@ -72,7 +73,7 @@ export default function page() {
             href={"/projects/sticky"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./sticky_notes.png" alt="sticky notes" />
+              <Image src="./sticky_notes.png" alt="sticky notes" />
             </div>
           </Link>
 
@@ -99,7 +100,7 @@ export default function page() {
             href={"/projects/foodpal"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./foodpal.png" alt="foodpal" />
+              <Image src="./foodpal.png" alt="foodpal" />
             </div>
           </Link>
 
@@ -126,7 +127,7 @@ export default function page() {
             href={"/projects/chatapp"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./vue_chat.png" alt="vue chat" />
+              <Image src="./vue_chat.png" alt="vue chat" />
             </div>
           </Link>
 
