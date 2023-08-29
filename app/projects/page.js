@@ -144,7 +144,7 @@ export default function page() {
             <p className="line-clamp-3 text-gray-500">
               Developed and designed a Chat App using Vue.js, Vuex, Vue-Router,
               and Firebase. The app includes authentication and secure data
-              storage."
+              storage.
             </p>
           </div>
         </li>
