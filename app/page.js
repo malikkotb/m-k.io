@@ -44,7 +44,7 @@ export default function Home() {
         <div>
           <motion.h1 variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.05, duration: 0.35 }} 
           className="text-3xl font-bold">Malik Kotb</motion.h1>
-          <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.1, duration: 0.35 }} className="text-gray-600">I do cool things with code.</motion.p>
+          <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.1, duration: 0.35 }} className="text-gray-500">I do cool things with code.</motion.p>
         </div>
         <div className="flex flex-col md:flex-row gap-6 md:items-center">
           <motion.img variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.15, duration: 0.35 }} src="profile.png" alt="profile" className="w-40 rounded-full"></motion.img>
