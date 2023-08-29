@@ -29,8 +29,8 @@ export default function page() {
             animate="visible"
             transition={{ delay: 0.15, duration: 0.35 }}
             className="max-w-sm text-gray-500"
-          >
-            Here are some of the projects I&apos;ve worked on.
+          > 
+            Here are some of the projects I have worked on.
           </motion.p>
         </div>
       </div>
