@@ -1,10 +1,14 @@
-import React from "react";
-
+"use client"
+import { useRouter } from "next/navigation";
 export default function page() {
+  const router = useRouter();
+
   return (
-    <div>
-      Vue Chat App Project Page
-      <a class="underline" href="/projects">← All Projects</a>
+    <div className="flex flex-col">
+      Vue Chat app Project Page
+      <a class="underline cursor-pointer" onClick={() => router.replace("/projects")}>
+        ← All Projects
+      </a>
     </div>
   );
 }

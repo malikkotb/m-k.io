@@ -1,10 +1,14 @@
-import React from "react";
-
+"use client"
+import { useRouter } from "next/navigation";
 export default function page() {
+
+  const router = useRouter()
+
+  
   return (
-    <div>
+    <div className="flex flex-col">
       Sticky Project Page
-      <a class="underline" href="/projects">
+      <a class="underline cursor-pointer" onClick={() => router.replace('/projects')}>
         ← All Projects
       </a>
     </div>

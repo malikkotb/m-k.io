@@ -47,7 +47,7 @@ export default function page() {
             href={"/projects/pastryshop"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <Image src="./pastry_shop.png" alt="pastry shop" />
+              <img src="./pastry_shop.png" alt="pastry shop" />
             </div>
           </Link>
 
@@ -73,7 +73,7 @@ export default function page() {
             href={"/projects/sticky"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <Image src="./sticky_notes.png" alt="sticky notes" />
+              <img src="./sticky_notes.png" alt="sticky notes" />
             </div>
           </Link>
 
@@ -100,7 +100,7 @@ export default function page() {
             href={"/projects/foodpal"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <Image src="./foodpal.png" alt="foodpal" />
+              <img src="./foodpal.png" alt="foodpal" />
             </div>
           </Link>
 
@@ -127,7 +127,7 @@ export default function page() {
             href={"/projects/chatapp"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <Image src="./vue_chat.png" alt="vue chat" />
+              <img src="./vue_chat.png" alt="vue chat" />
             </div>
           </Link>
 
