@@ -1,6 +1,6 @@
 "use client"
 import { useRouter } from "next/navigation";
-export default function page() {
+export default function PastryShop() {
 
   const router = useRouter()
 
