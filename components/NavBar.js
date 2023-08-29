@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme('light');
+  const { theme, setTheme } = useTheme("light");
 
   // when the component is mounted on the client side, this useEffect hook will be called and mounted will be set to True
   // and then the belox jsx will be rendered
@@ -49,12 +49,13 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link
-              href={"/resume"}
+            <a
+              href="./Lebenslauf_Kotb_22.pdf"
               className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
+              target="_blank"
             >
-              Resume
-            </Link>
+              PDF Resume
+            </a>
           </li>
           <li>
             <Link
@@ -70,8 +71,16 @@ export default function NavBar() {
           <div className="flex flex-col">
             {/* (theme==='light') &&  */}
             {/* (theme==='dark') && */}
-            { (theme==='light') && <button onClick={() => setTheme("dark")}><BsSun className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
-            {  (theme==='dark') && <button onClick={() => setTheme("light")}><BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" /></button>}
+            {theme === "light" && (
+              <button onClick={() => setTheme("dark")}>
+                <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
+              </button>
+            )}
+            {theme === "dark" && (
+              <button onClick={() => setTheme("light")}>
+                <BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" />
+              </button>
+            )}
           </div>
         </div>
       </nav>

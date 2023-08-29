@@ -90,7 +90,7 @@ export default function Contact() {
             rounded-lg p-4 transition-opacity dark:transition-opacity
             bg-black bg-opacity-10 hover:bg-opacity-20 
             dark:bg-[#F8F9FA] dark:bg-opacity-20 dark:hover:bg-opacity-10"
-            href="mailto:malikkotb@icloud.com"
+            href="https://github.com/malikkotb"
             target="_blank"
           >
             <div className="flex gap-2 text-center items-center">
@@ -112,7 +112,7 @@ export default function Contact() {
             rounded-lg p-4 transition-opacity dark:transition-opacity
             bg-black bg-opacity-10 hover:bg-opacity-20 
             dark:bg-[#F8F9FA] dark:bg-opacity-20 dark:hover:bg-opacity-10"
-            href="mailto:malikkotb@icloud.com"
+            href="https://www.instagram.com/malikhavemercy/"
             target="_blank"
           >
             <div className="flex gap-2 text-center items-center">
@@ -134,7 +134,7 @@ export default function Contact() {
             rounded-lg p-4 transition-opacity dark:transition-opacity
             bg-black bg-opacity-10 hover:bg-opacity-20 
             dark:bg-[#F8F9FA] dark:bg-opacity-20 dark:hover:bg-opacity-10"
-            href="mailto:malikkotb@icloud.com"
+            href="https://www.linkedin.com/in/malik-kotb-682412189/"
             target="_blank"
           >
             <div className="flex gap-2 text-center items-center">
