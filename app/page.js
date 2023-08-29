@@ -10,26 +10,31 @@ export default function Home() {
       title1: "Sticky",
       title2: "Notes",
       src: "./sticky_notes.png",
+      link: "/projects/sticky"
     },
     {
       title1: "Pastry",
       title2: "Shop",
       src: "./pastry_shop.png",
+      link: "/projects/pastryshop"
     },
     {
-      title1: "Foodpal",
-      title2: "Huit",
+      title1: "Food",
+      title2: "Pal",
       src: "./foodpal.png",
+      link: "/projects/foodpal"
     },
     {
-      title1: "Vue.js",
+      title1: "Vue",
       title2: "Chat App",
       src: "./vue_chat.png",
+      link: "/projects/chatapp"
     },
     {
       title1: "PyTorch",
       title2: "CNN",
       src: "./image_cnn.png",
+      link: "https://github.com/malikkotb/Seminar_SS23"
     },
   ];
 
@@ -83,7 +88,7 @@ export default function Home() {
         <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.3, duration: 0.35 }} className="pb-4">Projects</motion.p>
         <motion.div variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.35, duration: 0.35 }}>
         {projects.map((project, index) => {
-          return <Project key={index} project={project} />;
+          return <Project key={index} project={project} link={project.link} />;
         })}
         </motion.div>
       </div>

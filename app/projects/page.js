@@ -99,7 +99,7 @@ export default function page() {
             href={"/projects/foodpal"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./foodpal.png" alt="pastry shop" />
+              <img src="./foodpal.png" alt="foodpal" />
             </div>
           </Link>
 
@@ -117,6 +117,33 @@ export default function page() {
               Built and designed FoodPal, a food tracker app. It helps you
               monitor nutrition, set goals, and make informed choices. Vue.js,
               Firebase, Chart.js power the experience.
+            </p>
+          </div>
+        </li>
+        <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 first:pt-0 last:pb-0">
+          <Link
+            className="w-full md:w-2/5 aspect-video rounded-lg border hover:scale-105 transition-transform duration-300 overflow-clip select-none"
+            href={"/projects/chatapp"}
+          >
+            <div className="relative w-full h-full overflow-hidden">
+              <img src="./vue_chat.png" alt="vue chat" />
+            </div>
+          </Link>
+
+          <div className="w-full md:w-3/5 space-y-1">
+            <div>
+              <Link
+                class="text-primary font-medium hover:underline"
+                href="/projects/chatapp"
+              >
+                Chat App
+              </Link>
+              <span class="text-gray-500"> • 2022</span>
+            </div>
+            <p className="line-clamp-3 text-gray-500">
+              Developed and designed a Chat App using Vue.js, Vuex, Vue-Router,
+              and Firebase. The app includes authentication and secure data
+              storage."
             </p>
           </div>
         </li>
