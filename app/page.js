@@ -55,7 +55,7 @@ export default function Home() {
           <motion.img variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.15, duration: 0.35 }} src="profile.png" alt="profile" className="w-40 rounded-full"></motion.img>
         </div>
         <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="text-primary max-w-lg">
-          Hi, I{'\''}m Malik Kotb, a software engineer who loves building cool things
+          Hi, I&apos;m Malik Kotb, a software engineer who loves building cool things
           with code. I am currently focusing on creative web development, but my
           interest lie in all things development. I studied Computer Science
           Games Engineering at TUM.
