@@ -26,17 +26,17 @@ export default function MenuDropdown() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 mt-2 w-40 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg focus:outline-none">
+          <Menu.Items className="absolute right-0 mt-2 w-32 origin-top-right divide-y bg-white text-black dark:bg-black dark:text-white divide-gray-100 rounded-md shadow-lg focus:outline-none">
             <div className="px-1 py-1">
               <Menu.Item>
                 {({ active }) => (
                   <Link href={"/about"}>
                     <button
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        active ? "bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10" : ""
+                      } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                     >
-                      {active ? (
+                      {/* {active ? (
                         <EditActiveIcon
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
@@ -46,7 +46,7 @@ export default function MenuDropdown() {
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
                         />
-                      )}
+                      )} */}
                       About
                     </button>
                   </Link>
@@ -55,13 +55,13 @@ export default function MenuDropdown() {
 
               <Menu.Item>
                 {({ active }) => (
-                  <Link href={"/resume"}>
+                  <a href="./Lebenslauf_Kotb_22.pdf" target="_blank">
                     <button
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        active ? "bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10" : ""
+                      } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                     >
-                      {active ? (
+                      {/* {active ? (
                         <ArchiveActiveIcon
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
@@ -71,10 +71,10 @@ export default function MenuDropdown() {
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
                         />
-                      )}
+                      )} */}
                       Resume
                     </button>
-                  </Link>
+                  </a>
                 )}
               </Menu.Item>
               <Menu.Item>
@@ -82,10 +82,10 @@ export default function MenuDropdown() {
                   <Link href={"/projects"}>
                     <button
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        active ? "bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10" : ""
+                      } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                     >
-                      {active ? (
+                      {/* {active ? (
                         <MoveActiveIcon
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
@@ -95,7 +95,7 @@ export default function MenuDropdown() {
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
                         />
-                      )}
+                      )} */}
                       Projects
                     </button>
                   </Link>
@@ -106,10 +106,10 @@ export default function MenuDropdown() {
                   <Link href={"/contact"}>
                     <button
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        active ? "bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10" : ""
+                      } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                     >
-                      {active ? (
+                      {/* {active ? (
                         <MoveActiveIcon
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
@@ -119,7 +119,7 @@ export default function MenuDropdown() {
                           className="mr-2 h-5 w-5"
                           aria-hidden="true"
                         />
-                      )}
+                      )} */}
                       Contact
                     </button>
                   </Link>

@@ -48,7 +48,7 @@ export default function Resume() {
             <div className="flex flex-col w-full gap-8">
               <p>Hello World, I&apos;m Malik Kotb</p>
               <p>
-                Software engineer who loves building cool things with code. In
+                Software engineer who loves building cool things with code.
               </p>
 
               <p>

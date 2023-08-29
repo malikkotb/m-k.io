@@ -1,10 +1,16 @@
-import React from 'react'
-
+"use client"
+import { useRouter } from "next/navigation";
 export default function page() {
-  return (
-    <div>pastry shop project page
-      <a class="underline" href="/projects">← All Projects</a>
 
+  const router = useRouter()
+
+  
+  return (
+    <div className="flex flex-col">
+      pastry shop Project Page
+      <a class="underline cursor-pointer" onClick={() => router.replace('/projects')}>
+        ← All Projects
+      </a>
     </div>
-  )
+  );
 }
