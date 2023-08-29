@@ -76,7 +76,6 @@ export default function Home() {
               className="transition-transform transform hover:translate-y-[-1px] hover:translate-x-[1px]
                 flex gap-2 items-center no-underline cursor-pointer"
               href={"/contact"}
-              target="/blank"
             >
               <HiMiniArrowUpRight className="text-xl" />
               Connect with me
