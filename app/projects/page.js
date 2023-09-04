@@ -54,12 +54,12 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                class="text-primary font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
                 href="/projects/pastryshop"
               >
                 Pastry Shop
               </Link>
-              <span class="text-gray-500"> • 2023</span>
+              <span className="text-gray-500"> • 2023</span>
             </div>
             <p className="line-clamp-3 text-gray-500">
               Designed and crafted an elegant pastry shop e-commerce using
@@ -80,12 +80,12 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                class="text-primary font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
                 href="/projects/sticky"
               >
                 Sticky Notes
               </Link>
-              <span class="text-gray-500"> • 2023</span>
+              <span className="text-gray-500"> • 2023</span>
             </div>
             <p className="line-clamp-3 text-gray-500">
               Designed and developed a dynamic sticky-notes app with Next.js,
@@ -107,12 +107,12 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                class="text-primary font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
                 href="/projects/foodpal"
               >
                 Foodpal
               </Link>
-              <span class="text-gray-500"> • 2022</span>
+              <span className="text-gray-500"> • 2022</span>
             </div>
             <p className="line-clamp-3 text-gray-500">
               Built and designed FoodPal, a food tracker app. It helps you
@@ -134,12 +134,12 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                class="text-primary font-medium hover:underline"
+                className="text-primary font-medium hover:underline"
                 href="/projects/chatapp"
               >
                 Chat App
               </Link>
-              <span class="text-gray-500"> • 2022</span>
+              <span className="text-gray-500"> • 2022</span>
             </div>
             <p className="line-clamp-3 text-gray-500">
               Developed and designed a Chat App using Vue.js, Vuex, Vue-Router,
