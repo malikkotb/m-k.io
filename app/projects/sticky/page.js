@@ -31,28 +31,28 @@ export default function PastryShop() {
 
         <div className="prose flex flex-col gap-4 sm:gap-12 px-4 md:px-6 py-2 max-w-[1024px] mx-auto">
           <Image
-            src="../../pastry1.png"
+            src="../../sticky1.png"
             width={500}
             height={500}
             alt="Picture of the author"
             className="w-full h-auto rounded-lg"
           />
           <Image
-            src="../../pastry3.png"
+            src="../../sticky2.png"
             width={500}
             height={500}
             alt="Picture of the author"
             className="w-full h-auto rounded-lg"
           />
           <Image
-            src="../../pastry4.png"
+            src="../../sticky3.png"
             width={500}
             height={500}
             alt="Picture of the author"
             className="w-full h-auto rounded-lg"
           />
           <Image
-            src="../../pastry5.png"
+            src="../../sticky4.png"
             width={500}
             height={500}
             alt="Picture of the author"
