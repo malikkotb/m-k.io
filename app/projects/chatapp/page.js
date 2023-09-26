@@ -37,6 +37,8 @@ export default function PastryShop() {
             alt="Picture of the project"
             className="w-full h-auto rounded-lg"
           />
+          <img className="w-full h-auto rounded-lg" width={500} height={500} src="../../chat1.png">
+          </img>
           <Image
             src="../../chat2.png"
             width={500}
