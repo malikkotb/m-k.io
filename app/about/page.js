@@ -91,7 +91,10 @@ export default function Resume() {
             <h2 className="md:w-28 text-secondary shrink-0 text-gray-500">
               Education, Work
             </h2>
-            <div className="flex flex-col w-full gap-8"></div>
+            <div className="flex flex-col w-full gap-8">
+              Maria-Theresia-Gymnasium, Abitur 2.1
+              Bachelor of Science: Computer Science - Games Engineering at TUM (Technical University of Munich)
+            </div>
           </section>
         </motion.div>
       </div>
