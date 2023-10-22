@@ -50,7 +50,7 @@ export default function NavBar() {
           </li>
           <li>
             <a
-              href="./Lebenslauf_Kotb_22.pdf"
+              href="./Lebenslauf_Kotb_23.pdf"
               className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
               target="_blank"
             >
