@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { ModeToggle } from "./ModeToggle";
+import MagneticWrapper from "./MagneticWrapper";
 
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
@@ -25,66 +26,64 @@ export default function NavBar() {
   }
 
   return (
-    <header className="relative md:sticky top-0 z-50 dark:bg-[#121212] bg-white">
+    <header className="relative md:sticky top-0 z-50 dark:bg-black bg-white">
       <nav className="px-6 md:px-6 py-3 lg:max-w-[700px] mx-auto flex justify-between items-center gap-3">
+      <MagneticWrapper>
         <Link href={"/"}>
           <div>
             <AiFillBuild className="h-6 w-6" />
           </div>
         </Link>
+        </MagneticWrapper>
+
         <ul className="hidden md:flex font-medium items-center gap-1">
-          <li>
-            <Link
-              href={"/about"}
-              className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={"/projects"}
-              className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <a
-              href="./Lebenslauf_Kotb_23.pdf"
-              className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
-              target="_blank"
-            >
-              PDF Resume
-            </a>
-          </li>
-          <li>
-            <Link
-              href={"/contact"}
-              className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100 transition-opacity"
-            >
-              Contact
-            </Link>
-          </li>
+          <MagneticWrapper>
+            <li>
+              <Link
+                href={"/about"}
+                className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
+              >
+                About
+              </Link>
+            </li>
+          </MagneticWrapper>
+          {/* hover:text-[#EB4D37] */}
+          <MagneticWrapper>
+            <li>
+              <Link
+                href={"/projects"}
+                className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
+              >
+                Projects
+              </Link>
+            </li>
+          </MagneticWrapper>
+          <MagneticWrapper>
+            <li>
+              <a
+                href="./Lebenslauf_Kotb_23.pdf"
+                className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
+                target="_blank"
+              >
+                PDF Resume
+              </a>
+            </li>
+          </MagneticWrapper>
+          <MagneticWrapper>
+            <li>
+              <Link
+                href={"/contact"}
+                className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
+              >
+                Contact
+              </Link>
+            </li>
+          </MagneticWrapper>
         </ul>
         <div className="flex items-center">
           <MenuDropdown />
           <div className="flex flex-col">
             <ModeToggle />
-            {/* (theme==='light') &&  */}
-            {/* (theme==='dark') && */}
-            
-{/*             
-            {theme === "light" && (
-              <button onClick={() => setTheme("dark")}>
-                <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
-              </button>
-            )}
-            {theme === "dark" && (
-              <button onClick={() => setTheme("light")}>
-                <BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" />
-              </button>
-            )} */}
           </div>
         </div>
       </nav>
