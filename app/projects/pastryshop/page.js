@@ -30,12 +30,14 @@ export default function PastryShop() {
         <div className="h-12"></div>
 
         <div className="prose flex flex-col gap-4 sm:gap-12 px-4 md:px-6 py-2 max-w-[1024px] mx-auto">
-      
+          <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry1.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry3.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry4.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry5.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry1.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry3.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry4.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry5.png"></img>
-
         </div>
       </article>
 
