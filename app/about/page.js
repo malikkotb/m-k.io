@@ -42,7 +42,7 @@ export default function Resume() {
         >
           <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
             {/* shrink-0 to prevent a flex item from shrinking */}
-            <h2 className="md:w-28 text-secondary shrink-0 text-gray-500">
+            <h2 className="md:w-28  shrink-0 text-gray-500">
               About
             </h2>
             <div className="flex flex-col w-full gap-8">
@@ -62,7 +62,7 @@ export default function Resume() {
             </div>
           </section>
           <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
-            <h2 className="md:w-28 text-secondary shrink-0 text-gray-500">
+            <h2 className="md:w-28  shrink-0 text-gray-500">
               Skills
             </h2>
             <div className="flex flex-col w-full gap-8">
@@ -76,7 +76,7 @@ export default function Resume() {
             </div>
           </section>
           <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
-            <h2 className="md:w-28 text-secondary shrink-0 text-gray-500">
+            <h2 className="md:w-28  shrink-0 text-gray-500">
               Projects
             </h2>
             <div className="w-full">
@@ -88,7 +88,7 @@ export default function Resume() {
             </div>
           </section>
           <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
-            <h2 className="md:w-28 text-secondary shrink-0 text-gray-500">
+            <h2 className="md:w-28  shrink-0 text-gray-500">
               Education, Work
             </h2>
             <div className="flex flex-col w-full gap-8">

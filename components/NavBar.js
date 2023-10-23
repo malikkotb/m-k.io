@@ -1,22 +1,18 @@
 "use client";
-import { BsSun } from "react-icons/bs";
-import { BsMoonFill } from "react-icons/bs";
 
 // import { RxHamburgerMenu } from "react-icons/rx"
 import MenuDropdown from "./MenuDropdown";
 import { AiFillBuild } from "react-icons/ai";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { ModeToggle } from "./ModeToggle";
 import MagneticWrapper from "./MagneticWrapper";
 
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme("light");
 
   // when the component is mounted on the client side, this useEffect hook will be called and mounted will be set to True
-  // and then the belox jsx will be rendered
+  // and then the below jsx will be rendered
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -77,6 +73,17 @@ export default function NavBar() {
               >
                 Contact
               </Link>
+            </li>
+          </MagneticWrapper>
+          <MagneticWrapper>
+            <li>
+              <a
+                href="https://malikkotb.github.io/blog/"
+                className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
+                target="_blank"
+              >
+                Blog
+              </a>
             </li>
           </MagneticWrapper>
         </ul>

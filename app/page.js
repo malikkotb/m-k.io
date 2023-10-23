@@ -54,7 +54,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-6 md:items-center">
           <motion.img variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.15, duration: 0.35 }} src="profile.png" alt="profile" className="w-40 rounded-full"></motion.img>
         </div>
-        <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="text-primary max-w-lg">
+        <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="  max-w-lg">
           Hi, I&apos;m Malik Kotb, a software engineer who loves building cool things
           with code. I am currently focusing on creative web development, but my
           interest lie in all things development. I studied Computer Science

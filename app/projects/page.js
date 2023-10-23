@@ -54,7 +54,7 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                className="text-primary font-medium hover:underline"
+                className="  font-medium hover:underline"
                 href="/projects/pastryshop"
               >
                 Pastry Shop
@@ -80,7 +80,7 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                className="text-primary font-medium hover:underline"
+                className="  font-medium hover:underline"
                 href="/projects/sticky"
               >
                 Sticky Notes
@@ -107,7 +107,7 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                className="text-primary font-medium hover:underline"
+                className="  font-medium hover:underline"
                 href="/projects/foodpal"
               >
                 Foodpal
@@ -134,7 +134,7 @@ export default function page() {
           <div className="w-full md:w-3/5 space-y-1">
             <div>
               <Link
-                className="text-primary font-medium hover:underline"
+                className="  font-medium hover:underline"
                 href="/projects/chatapp"
               >
                 Chat App

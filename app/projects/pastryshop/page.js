@@ -8,17 +8,18 @@ export default function PastryShop() {
     <div className="flex flex-col gap-20">
       <article>
         <div className="flex flex-col gap-3 px-4 md:px-6 py-2 max-w-[700px] mx-auto">
-          <div className="flex gap-3 text-secondary">
+          <div className="flex gap-3">
             <p className="opacity-70">2023</p>
             <span className="opacity-70">·</span>
             <a
               href="https://tiny-cat-4b4dc8.netlify.app/"
+              target="_blank"
               className="underline underline-offset-4 opacity-70 hover:opacity-100"
             >
               Visit Project ↗
             </a>
           </div>
-          <h1 className="text-primary text-3xl font-bold tracking-tight leading-tight">
+          <h1 className="text-3xl font-bold tracking-tight leading-tight">
             Pastry Shop
           </h1>
           <p className="text-lg opacity-70">
@@ -29,34 +30,10 @@ export default function PastryShop() {
         <div className="h-12"></div>
 
         <div className="prose flex flex-col gap-4 sm:gap-12 px-4 md:px-6 py-2 max-w-[1024px] mx-auto">
-          <Image
-            src="../../pastry1.png"
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../pastry3.png"
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../pastry4.png"
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../pastry5.png"
-            width={500}
-            height={500}
-            alt="Picture of the author"
-            className="w-full h-auto rounded-lg"
-          />
+          <img className="rounded-lg" alt="picture of project" src="../../pastry1.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../pastry3.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../pastry4.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../pastry5.png"></img>
 
         </div>
       </article>

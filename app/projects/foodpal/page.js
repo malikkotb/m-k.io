@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 export default function PastryShop() {
   const router = useRouter();
@@ -8,17 +7,18 @@ export default function PastryShop() {
     <div className="flex flex-col gap-20">
       <article>
         <div className="flex flex-col gap-3 px-4 md:px-6 py-2 max-w-[700px] mx-auto">
-          <div className="flex gap-3 text-secondary">
+          <div className="flex gap-3">
             <p className="opacity-70">2023</p>
             <span className="opacity-70">·</span>
             <a
               href="https://github.com/malikkotb/foodpal"
+              target="_blank"
               className="underline underline-offset-4 opacity-70 hover:opacity-100"
             >
               Visit Project ↗
             </a>
           </div>
-          <h1 className="text-primary text-3xl font-bold tracking-tight leading-tight">
+          <h1 className="  text-3xl font-bold tracking-tight leading-tight">
             FoodPal
           </h1>
           <p className="text-lg opacity-70">
@@ -30,41 +30,11 @@ export default function PastryShop() {
         <div className="h-12"></div>
 
         <div className="prose flex flex-col gap-4 sm:gap-12 px-4 md:px-6 py-2 max-w-[1024px] mx-auto">
-          <Image
-            src="../../foodpal_1.png"
-            width={500}
-            height={500}
-            alt="Picture of the project"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../foodpal_2.png"
-            width={500}
-            height={500}
-            alt="Picture of the project"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../foodpal_3.png"
-            width={500}
-            height={500}
-            alt="Picture of the project"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../foodpal_4.png"
-            width={500}
-            height={500}
-            alt="Picture of the project"
-            className="w-full h-auto rounded-lg"
-          />
-          <Image
-            src="../../foodpal_5.png"
-            width={500}
-            height={500}
-            alt="Picture of the project"
-            className="w-full h-auto rounded-lg"
-          />
+          <img className="rounded-lg" alt="picture of project" src="../../foodpal_1.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../foodpal_2.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../foodpal_3.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../foodpal_4.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../foodpal_5.png"></img>
         </div>
       </article>
 
