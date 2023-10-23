@@ -8,6 +8,7 @@ import { AiFillBuild } from "react-icons/ai";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { ModeToggle } from "./ModeToggle";
 
 export default function NavBar() {
   const [mounted, setMounted] = useState(false);
@@ -69,8 +70,11 @@ export default function NavBar() {
         <div className="flex items-center">
           <MenuDropdown />
           <div className="flex flex-col">
+            <ModeToggle />
             {/* (theme==='light') &&  */}
             {/* (theme==='dark') && */}
+            
+{/*             
             {theme === "light" && (
               <button onClick={() => setTheme("dark")}>
                 <BsSun className="text-xl font-bold opacity-60 hover:opacity-100" />
@@ -80,7 +84,7 @@ export default function NavBar() {
               <button onClick={() => setTheme("light")}>
                 <BsMoonFill className="text-xl font-bold opacity-60 hover:opacity-100" />
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </nav>
