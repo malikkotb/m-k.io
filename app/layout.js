@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${roboto.className} antialiased bg-primary text-primary width-full`}
+        className={`${roboto.className} antialiased width-full`}
       >
         <ThemeProvider
             attribute="class"
