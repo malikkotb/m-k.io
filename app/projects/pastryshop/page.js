@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 export default function PastryShop() {
   const router = useRouter();
@@ -34,10 +33,11 @@ export default function PastryShop() {
           <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry3.png"></img>
           <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry4.png"></img>
           <img className="rounded-lg" alt="picture of project" src="/m-k.io/pastry5.png"></img>
-          <img className="rounded-lg" alt="picture of project" src="../../pastry1.png"></img>
+          {/* local version only: */}
+          {/* <img className="rounded-lg" alt="picture of project" src="../../pastry1.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry3.png"></img>
           <img className="rounded-lg" alt="picture of project" src="../../pastry4.png"></img>
-          <img className="rounded-lg" alt="picture of project" src="../../pastry5.png"></img>
+          <img className="rounded-lg" alt="picture of project" src="../../pastry5.png"></img> */}
         </div>
       </article>
 
