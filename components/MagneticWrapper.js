@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-// magnetic wrapper effect for icons and list
-items
+// magnetic wrapper effect
 export default function MagneticWrapper({ children }) {
   const ref = useRef();
   const [position, setPosition] = useState({ x: 0, y: 0 }); // position of the mouse
