@@ -29,7 +29,7 @@ export default function page() {
             animate="visible"
             transition={{ delay: 0.15, duration: 0.35 }}
             className="max-w-sm text-gray-500"
-          > 
+          >
             Here are some of the projects I have worked on.
           </motion.p>
         </div>
@@ -41,6 +41,32 @@ export default function page() {
         transition={{ delay: 0.35, duration: 0.4 }}
         className="flex flex-col"
       >
+        <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 first:pt-0 last:pb-0">
+          <Link
+            className="w-full md:w-2/5 aspect-video rounded-lg border hover:scale-105 transition-transform duration-300 overflow-clip select-none"
+            href={"/projects/notetaker"}
+          >
+            <div className="relative w-full h-full overflow-hidden">
+              <img src="./notetaker.png" alt="notetaker" />
+            </div>
+          </Link>
+
+          <div className="w-full md:w-3/5 space-y-1">
+            <div>
+              <Link
+                className="  font-medium hover:underline"
+                href="/projects/notetaker"
+              >
+                NoteTaker
+              </Link>
+              <span className="text-gray-500"> • 2023</span>
+            </div>
+            <p className="line-clamp-3 text-gray-500">
+              Designed and developed NoteTaker, a full-stack
+              note-taking application using Next.js, TailwindCSS, Pocketbase and Zustand.
+            </p>
+          </div>
+        </li>
         <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 first:pt-0 last:pb-0">
           <Link
             className="w-full md:w-2/5 aspect-video rounded-lg border hover:scale-105 transition-transform duration-300 overflow-clip select-none"

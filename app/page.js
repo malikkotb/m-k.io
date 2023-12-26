@@ -7,6 +7,12 @@ import { motion } from "framer-motion";
 export default function Home() {
   const projects = [
     {
+      title1: "Note",
+      title2: "Taker",
+      src: "./notetaker.png",
+      link: "/projects/notetaker"
+    },
+    {
       title1: "Sticky",
       title2: "Notes",
       src: "./sticky_notes.png",
@@ -26,7 +32,7 @@ export default function Home() {
     },
     {
       title1: "Vue",
-      title2: "Chat App",
+      title2: "Chat",
       src: "./vue_chat.png",
       link: "/projects/chatapp"
     },
@@ -56,8 +62,7 @@ export default function Home() {
         </div>
         <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="  max-w-lg">
           Hi, I&apos;m Malik Kotb, a software engineer who loves building cool things
-          with code. I am currently focusing on creative web development, but my
-          interest lie in all things development. I studied Computer Science
+          with code. I am currently writing my bachelor's thesis. I studied Computer Science:
           Games Engineering at TUM.
         </motion.p>
         <motion.ul variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.25, duration: 0.35 }} className="flex flex-col md:flex-row gap-2 md:gap-6">
