@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <motion.p variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.2, duration: 0.35 }} className="  max-w-lg">
           Hi, I&apos;m Malik Kotb, a software engineer who loves building cool things
-          with code. I am currently writing my bachelor's thesis. I studied Computer Science:
+          with code. I am currently writing my bachelor&apos;s thesis. I studied Computer Science:
           Games Engineering at TUM.
         </motion.p>
         <motion.ul variants={animationVariant} initial="hidden" animate="visible" transition={{ delay: 0.25, duration: 0.35 }} className="flex flex-col md:flex-row gap-2 md:gap-6">
