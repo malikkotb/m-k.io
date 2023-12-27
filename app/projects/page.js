@@ -47,7 +47,7 @@ export default function page() {
             href={"/projects/notetaker"}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img src="./notetaker.png" alt="notetaker" />
+              <img src="./dark-mode-with-coding.png" alt="notetaker" />
             </div>
           </Link>
 

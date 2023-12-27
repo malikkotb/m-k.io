@@ -9,7 +9,7 @@ export default function Home() {
     {
       title1: "Note",
       title2: "Taker",
-      src: "./notetaker.png",
+      src: "./dark-mode-with-coding.png",
       link: "/projects/notetaker"
     },
     {
