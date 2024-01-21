@@ -55,7 +55,7 @@ export default function MenuDropdown() {
 
               <Menu.Item>
                 {({ active }) => (
-                  <a href="./Lebenslauf_Kotb_23.pdf" target="_blank">
+                  <a href="./CV-Kotb-24.pdf" target="_blank">
                     <button
                       className={`${
                         active ? "bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10" : ""

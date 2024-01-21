@@ -57,7 +57,7 @@ export default function NavBar() {
           <MagneticWrapper>
             <li>
               <a
-                href="./Lebenslauf_Kotb_23.pdf"
+                href="./CV-Kotb-24.pdf"
                 className="px-4 py-2 cursor-pointer rounded-lg text-sm opacity-70 hover:opacity-100  transition-opacity"
                 target="_blank"
               >
